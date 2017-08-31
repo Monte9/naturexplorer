@@ -1,0 +1,62 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.BoxTop {
+  display: flex;
+  flex-direction: row;
+}
+
+.BoxBottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.BoxTopLeft {
+  position: relative;
+}
+
+.BoxTopRight {
+  position: relative;
+}
+
+.BoxBottomLeft {
+  position: relative;
+}
+
+.BoxBottomRight {
+  position: relative;
+}
+
+.BgImage {
+  position: relative;
+  display: block;
+}
+
+.BgTextContainer {
+  position: absolute;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
+  display:-webkit-box;
+  user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.BgTextContainer:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.Label {
+  font-size: 70px;
+  color: white;
+}
