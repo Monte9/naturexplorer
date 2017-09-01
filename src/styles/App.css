@@ -64,6 +64,8 @@
   color: white;
 }
 
+/* Laptops (smaller window sizes) ----------- */
+
 @media only screen and (max-width: 1000px) {
   .BoxTop {
     display: flex;
@@ -80,5 +82,33 @@
   .BgImage {
     height: auto;
     width: 100%;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  .BoxTop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BoxBottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Label {
+    font-size: 7vw;
+  }
+
+  .BgImage {
+    height: auto;
+    width: 100%;
+  }
+
+  .BgTextContainer {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
