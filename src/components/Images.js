@@ -8,11 +8,10 @@ import {
 
 import {
   EARTH_PORN_IMAGES, EXPOSURE_PORN_IMAGES,
-  WALLPAPERS_IMAGES, LANDSCAPE_ASTRO_IMAGES,
-  IMAGES
+  WALLPAPERS_IMAGES, LANDSCAPE_ASTRO_IMAGES, IMAGES
 } from '../source.js'
 
-class Images extends Component {
+export default class Images extends Component {
   getImages(type) {
     switch(type) {
       case EARTH_PORN:
@@ -32,15 +31,14 @@ class Images extends Component {
     return data.map(image => {
       return (
         <Parallax bgImage={image} strength={PARALLAX_SCROLL_STRENTH}>
-          <div style={{ height: FULL_HEIGHT }} />
+          <div style={{ height: window.innerHeight }} />
         </Parallax>
       )
     })
   }
 
   render() {
-    const { type } = this.props
-    const data = this.getImages(type)
+    const data = this.getImages(this.props.type)
 
     return (
       <div className="App">
@@ -49,5 +47,3 @@ class Images extends Component {
     );
   }
 }
-
-export default Images;

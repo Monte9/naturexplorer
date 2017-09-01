@@ -4,44 +4,34 @@ import { Link } from 'react-router-dom';
 import '../styles/App.css';
 
 import {
-  EARTH_PORN, EXPOSURE_PORN, WALLPAPERS, LANDSCAPE_ASTRO, SUB
+  EARTH_PORN, EXPOSURE_PORN, WALLPAPERS, LANDSCAPE_ASTRO,
+  SUB, HOMEPAGE_BG_IMAGES
 } from '../constants'
 
-class App extends Component {
+export default class App extends Component {
+  renderContainer(category) {
+    return (
+      <Link to={SUB + category} className="ImageContainer">
+        <img src={HOMEPAGE_BG_IMAGES[category]} className="BgImage" />
+        <div className="BgTextContainer">
+          <p className="Label">{SUB}{category}</p>
+        </div>
+      </Link>
+    )
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="BoxTop">
-          <Link to="/r/EarthPorn" className="BoxTopLeft">
-            <img src="http://i.imgur.com/SIk9LkV.jpg" className="BgImage" />
-            <div className="BgTextContainer">
-              <p className="Label">{SUB}{EARTH_PORN}</p>
-            </div>
-          </Link>
-          <Link to="/r/ExposurePorn" className="BoxTopRight">
-            <img src="http://i.imgur.com/lYzMfJJ.jpg" className="BgImage" />
-            <div className="BgTextContainer">
-              <p className="Label">{SUB}{EXPOSURE_PORN}</p>
-            </div>
-          </Link>
+        <div className="ImagesRow">
+          {this.renderContainer(EARTH_PORN)}
+          {this.renderContainer(EXPOSURE_PORN)}
         </div>
-        <div className="BoxBottom">
-          <Link to="/r/Wallpapers" className="BoxBottomLeft">
-            <img src="http://i.imgur.com/sXNLRVW.jpg" className="BgImage" />
-            <div className="BgTextContainer">
-              <p className="Label">{SUB}{WALLPAPERS}</p>
-            </div>
-          </Link>
-          <Link to="/r/LandscapeAstro" className="BoxBottomRight">
-            <img src="https://i.imgur.com/1kJoNwG.jpg" className="BgImage" />
-            <div className="BgTextContainer">
-              <p className="Label">{SUB}{LANDSCAPE_ASTRO}</p>
-            </div>
-          </Link>
+        <div className="ImagesRow">
+          {this.renderContainer(WALLPAPERS)}
+          {this.renderContainer(LANDSCAPE_ASTRO)}
         </div>
       </div>
     );
   }
 }
-
-export default App;

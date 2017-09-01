@@ -3,29 +3,12 @@
   flex-direction: column;
 }
 
-.BoxTop {
+.ImagesRow {
   display: flex;
   flex-direction: row;
 }
 
-.BoxBottom {
-  display: flex;
-  flex-direction: row;
-}
-
-.BoxTopLeft {
-  position: relative;
-}
-
-.BoxTopRight {
-  position: relative;
-}
-
-.BoxBottomLeft {
-  position: relative;
-}
-
-.BoxBottomRight {
+.ImageContainer {
   position: relative;
 }
 
@@ -67,14 +50,11 @@
 /* Laptops (smaller window sizes) ----------- */
 
 @media only screen and (max-width: 1000px) {
-  .BoxTop {
+  .ImagesRow {
     display: flex;
     flex-direction: column;
   }
-  .BoxBottom {
-    display: flex;
-    flex-direction: column;
-  }
+
   .Label {
     font-size: 7vw;
   }
@@ -88,12 +68,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-  .BoxTop {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .BoxBottom {
+  .ImagesRow {
     display: flex;
     flex-direction: column;
   }

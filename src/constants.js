@@ -3,12 +3,13 @@ export const EXPOSURE_PORN = 'ExposurePorn'
 export const WALLPAPERS = 'Wallpapers'
 export const LANDSCAPE_ASTRO = 'LandscapeAstro'
 
+export const HOMEPAGE_BG_IMAGES = {
+  EarthPorn: 'http://i.imgur.com/SIk9LkV.jpg',
+  ExposurePorn: 'http://i.imgur.com/lYzMfJJ.jpg',
+  Wallpapers: 'http://i.imgur.com/sXNLRVW.jpg',
+  LandscapeAstro: 'http://i.imgur.com/SIk9LkV.jpg'
+}
+
 export const SUB = '/r/'
-
-export const FULL_WIDTH = window.innerWidth
-export const HALF_WIDTH = window.innerWidth / 2
-
-export const FULL_HEIGHT = window.innerHeight
-export const HALF_HEIGHT = window.innerHeight / 2
 
 export const PARALLAX_SCROLL_STRENTH = -500
