@@ -28,9 +28,11 @@ export default class Images extends Component {
   }
 
   renderImages(data) {
+    const { strength } = this.props
+
     return data.map(image => {
       return (
-        <Parallax bgImage={image} strength={PARALLAX_SCROLL_STRENTH}>
+        <Parallax bgImage={image} strength={strength || PARALLAX_SCROLL_STRENTH}>
           <div style={{ height: window.innerHeight }} />
         </Parallax>
       )

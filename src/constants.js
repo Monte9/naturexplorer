@@ -12,4 +12,4 @@ export const HOMEPAGE_BG_IMAGES = {
 
 export const SUB = '/r/'
 
-export const PARALLAX_SCROLL_STRENTH = -500
+export const PARALLAX_SCROLL_STRENTH = 300

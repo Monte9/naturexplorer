@@ -10,6 +10,10 @@ import {
 
 export default class App extends Component {
   renderContainer(category) {
+
+    console.log('====================================');
+    console.log(SUB + category);
+    console.log('====================================');
     return (
       <Link to={SUB + category} className="ImageContainer">
         <img src={HOMEPAGE_BG_IMAGES[category]} className="BgImage" />
