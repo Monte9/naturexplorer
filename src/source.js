@@ -1,10 +1,10 @@
 export const EARTH_PORN_IMAGES = [
+  "https://i.redd.it/lghllrc86vdy.jpg",
   "https://i.redd.it/qjey2f2v0vmz.jpg",
   "https://i.redd.it/i6e3jrhi5idz.jpg",
   "https://c1.staticflickr.com/5/4509/36799279394_08c18ebe43_o.jpg",
   "https://i.imgur.com/g6qBRz3.jpg",
   "https://cdn.discordapp.com/attachments/141691818440916992/311092056489459713/image.jpg",
-  "https://i.redd.it/lghllrc86vdy.jpg",
   "http://i.imgur.com/6aJjzIK.jpg"
 ]
 
@@ -21,15 +21,15 @@ export const EXPOSURE_PORN_IMAGES = [
 ]
 
 export const WALLPAPERS_IMAGES = [
-  "https://i.redd.it/404sp3y5v7qz.jpg",
   "http://i.imgur.com/Fx6BGlt.jpg",
   "https://i.imgur.com/skKafyR.jpg",
+  "https://i.gyazo.com/416026753d085352095c630074165dc9.png",
   "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-557971.jpg",
   "https://i.redd.it/elds5ngfa5qz.png",
-  "https://i.gyazo.com/416026753d085352095c630074165dc9.png",
   "https://i.redd.it/gntuqfxi94qz.jpg",
   "http://i.imgur.com/5yeBVeM.jpg",
   "https://i.imgur.com/CUGGaiZ.jpg",
+  "https://i.redd.it/404sp3y5v7qz.jpg",
   "http://i.imgur.com/18WeFBs.jpg",
   "https://i.imgur.com/r9lVgFs.jpg",
   "https://i.redd.it/bcwjtdhpd7oy.jpg",
@@ -37,7 +37,11 @@ export const WALLPAPERS_IMAGES = [
 ]
 
 export const LANDSCAPE_ASTRO_IMAGES = [
-  "https://i.redd.it/jwh3r97mwidz.jpg",
+  "https://i.redd.it/8x9kz5lti8oz.jpg",
+  "http://i.imgur.com/CxXaGwK.jpg",
+  "https://i.imgur.com/6y1vMOP.jpg",
+  "https://i.imgur.com/0At0wz6.jpg",
+  "https://i.imgur.com/ZlHJkWn.jpg"
 ]
 
 export const IMAGES = [

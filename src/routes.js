@@ -17,9 +17,9 @@ const Routes = (props) => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/r/EarthPorn" render={() => <Images type={EARTH_PORN} />} />
-        <Route path="/r/ExposurePorn" render={() => <Images type={EXPOSURE_PORN} />} />
-        <Route path="/r/Wallpapers" render={() => <Images type={WALLPAPERS} />} />
-        <Route path="/r/LandscapeAstro" render={() => <Images type={LANDSCAPE_ASTRO} />} />
+        <Route path="/r/ExposurePorn" render={() => <Images type={EXPOSURE_PORN} strength={200} />} />
+        <Route path="/r/Wallpapers" render={() => <Images type={WALLPAPERS} strength={100} />} />
+        <Route path="/r/LandscapeAstro" render={() => <Images type={LANDSCAPE_ASTRO} strength={200} />} />
         <Route component={NotFound} />
       </Switch>
     </Router>
